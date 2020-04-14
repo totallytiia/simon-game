@@ -10,7 +10,9 @@ $(document).keydown(function() {
 	if (!started) {
 		started = true;
 		$("#level-title").text("Level " + level);
-		nextSequence();
+		setTimeout(function () {
+			nextSequence();
+		},500);
 	}
 });
 
